@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
@@ -137,6 +137,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="/images/walrus-format.jpg"
+                    alt="Walrus format"
+                  />
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -151,6 +156,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="/images/harseshoe-format.jpg"
+                    alt="Harseshoe format"
+                  />
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -162,6 +172,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="/images/handlebar-format.jpg"
+                    alt="Handlebar format"
+                  />
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -320,7 +335,7 @@
         <button type="button" class="modal-btn-close">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="order-call-form">
+        <form name="order-call-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ім'я</label
@@ -331,6 +346,9 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
           <div class="form-field">
@@ -343,6 +361,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
           <div class="form-field">
@@ -355,6 +375,7 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
           <button type="submit" class="form-button button">

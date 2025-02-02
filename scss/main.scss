@@ -1,0 +1,24 @@
+// base
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+
+// components
+@import './components/buttons';
+@import './components/links';
+@import './components/forms';
+
+//sections
+@import './components/header';
+@import './components/hero-section';
+@import './components/advantages-section';
+@import './components/traditions-section';
+@import './components/chefs-section';
+@import './components/formats-section';
+@import './components/contact-section';
+@import './components/footer';
+
+@import './components/modal';
+
+@import './utils/mixins';
