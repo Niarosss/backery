@@ -1,0 +1,13 @@
+.form-terns {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 220px;
+  text-align: center;
+
+  &__link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+  }
+}
