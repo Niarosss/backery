@@ -1,29 +1,30 @@
-// base
+// base and utils
 @import './utils/fonts';
 @import './utils/variables';
 @import './base';
 @import './utils/texts';
 @import './utils/utils';
+@import './utils/mixins';
 
 // components
 @import './components/buttons';
-@import './components/links';
-@import './components/input';
-@import './components/form-terms';
-
-//sections
-@import './components/header';
-@import './components/hero-section';
-@import './components/advantages-section';
-@import './components/traditions-section';
-@import './components/chefs-section';
-@import './components/formats-section';
-@import './components/contact-section';
-@import './components/footer';
-
 @import './components/chef-card';
 @import './components/format-card';
+@import './components/input';
+@import './components/links';
 
-@import './components/modal';
-
-@import './utils/mixins';
+//layouts
+@import './layouts/section';
+@import './layouts/advantages-section';
+@import './layouts/chefs-section';
+@import './layouts/contact-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/form-terms';
+@import './layouts/formats-section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/modal';
+@import './layouts/mobile-menu';
+@import './layouts/traditions-section';
+@import './layouts/form-terms';

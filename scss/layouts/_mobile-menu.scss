@@ -1,0 +1,26 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-light);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-dark);
+  }
+}

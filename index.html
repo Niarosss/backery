@@ -29,9 +29,21 @@
               </li>
             </ul>
           </nav>
-          <button type="button" class="button modal-btn-open">
+          <button type="button" class="header__button button modal-btn-open">
             Замовити дзвінок
           </button>
+          <button type="button" class="header__burger menu-btn-open">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button type="button" class="mobile-menu__btn-close menu-btn-close">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -41,6 +53,12 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button
+            type="button"
+            class="hero-section__button button modal-btn-open"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -83,6 +101,8 @@
               </p>
             </div>
             <img
+              class="traditions-section__image"
+              srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
               src="./images/baker-man.jpg"
               alt="Чоловік пекар дивиться на батони із посмішкою"
             />
@@ -352,7 +372,9 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal__btn-close">Close</button>
+        <button type="button" class="modal__btn-close modal-btn-close">
+          Close
+        </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="order-call-form" autocomplete="off">
@@ -410,6 +432,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
