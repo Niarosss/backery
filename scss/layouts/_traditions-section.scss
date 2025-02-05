@@ -13,7 +13,7 @@
   }
 
   &__content {
-    min-width: 710px;
+    max-width: 710px;
   }
 
   &__title {
@@ -27,7 +27,7 @@
   }
   &__image {
     display: none;
-    border-radius: 400px 400px 0 0;
+    border-radius: 400px 400px 0px 0px;
 
     @media screen and (min-width: $bp-tablet) {
       display: block;
