@@ -1,14 +1,14 @@
 .input {
   position: relative;
 
-  &__labe {
+  &__label {
     position: absolute;
-    top: 16px;
+    top: 18px;
     left: 42px;
   }
 
   &__control {
-    padding: 8px 24px;
+    padding: 12px 24px;
     width: 100%;
     font-size: 16px;
     line-height: 1.17;
@@ -32,7 +32,7 @@
     }
 
     @media screen and (min-width: $bp-tablet) {
-      padding: 16px 42px;
+      padding: 16px 32px;
     }
   }
 }
