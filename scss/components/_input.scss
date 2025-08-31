@@ -8,13 +8,13 @@
   }
 
   &__control {
-    padding: 12px 24px;
+    padding: 12px 18px;
     width: 100%;
     font-size: 16px;
     line-height: 1.17;
     border: 1px solid var(--color-secondary-dark);
     border-radius: 8px;
-    background-color: transparent;
+    background-color: #ffffff14;
 
     &:focus {
       border-color: var(--color-brand-normal);
@@ -32,7 +32,7 @@
     }
 
     @media screen and (min-width: $bp-tablet) {
-      padding: 16px 32px;
+      padding: 14px 24px;
     }
   }
 }
